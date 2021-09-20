@@ -1,0 +1,7 @@
+Primary blue --------- #2FB1DB
+Primary butter ------- #FFE370
+
+Secondary orange ----- #F3923F
+Secondary purple ----- #AB78B2
+Secondary red -------- #E63830
+Secondary green ------ #A1C730

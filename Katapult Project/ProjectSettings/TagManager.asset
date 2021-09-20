@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - obj
+  - wall
+  - rightClickMenu
+  - programmingEnv
+  - onDragCanvas
+  - var
+  - saveLoadMenu
+  - mainCanvas
   layers:
   - Default
   - TransparentFX
