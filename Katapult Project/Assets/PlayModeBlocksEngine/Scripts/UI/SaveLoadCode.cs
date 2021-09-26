@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -34,15 +33,11 @@ public class SaveLoadCode : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Helloworld");
-        if(SceneManager.GetActiveScene().name != "Challenge 5")
         mainCanvas = GameObject.FindGameObjectWithTag("GameController").transform.GetChild(1).GetComponent<Canvas>();
-        
     }
 
     private void Start()
     {
-        mainCanvas = GameObject.FindGameObjectWithTag("GameController").transform.GetChild(1).GetComponent<Canvas>();
         foreach (Transform child in transform.parent)
         {
             if (child.GetComponent<SaveLoadMenu>())
