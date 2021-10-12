@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menus.unity
-    guid: 7c557cbc3d4a90241b0dc52077165e26
+    path: Assets/Scenes/Menus/Main.unity
+    guid: ae18ff048b921d8478784f9ec2a50081
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: 6bfe2759811fedb478de1e76f3061a80
+    path: Assets/Scenes/Objectives/Avatar Creation.unity
+    guid: 971a710197bf33e4ea1baa5a76b5373c
+  - enabled: 1
+    path: Assets/Scenes/Menus/World Map.unity
+    guid: 93f4a295e4ebfec409b4ba45d96aec9e
   m_configObjects: {}

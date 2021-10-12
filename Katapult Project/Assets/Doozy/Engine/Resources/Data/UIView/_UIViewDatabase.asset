@@ -17,6 +17,12 @@ MonoBehaviour:
   - Custom
   - Example
   - General
+  - Menus
+  - Objectives
+  - OverWorldMap
   Categories:
   - {fileID: 11400000, guid: b01e98f4801f7124ba39e1dac4debf90, type: 2}
   - {fileID: 11400000, guid: dc1b933cbad645b469c35b786d00519f, type: 2}
+  - {fileID: 11400000, guid: 10736eaf2212c90429c18cf2d45e38ad, type: 2}
+  - {fileID: 11400000, guid: 134d608ce680d8446bc6cdf856cbe9d0, type: 2}
+  - {fileID: 11400000, guid: 352efb8eee4c40f49abfc2225929a178, type: 2}

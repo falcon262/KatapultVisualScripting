@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Doozy.Engine.UI;
 
 public class swipeMenu : MonoBehaviour
 {
     public GameObject scrollbar;
+    public UIView[] infoViews;
+    public GameObject[] stages;
     private float scroll_pos = 0;
     float[] pos;
 
@@ -47,12 +50,14 @@ public class swipeMenu : MonoBehaviour
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
                 //Debug.LogWarning("Current Selected Level" + i);
-                transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1.2f, 1.2f), 0.1f);
+                stages[i].transform.localScale = Vector2.Lerp(stages[i].transform.localScale, new Vector2(1.2f, 1.2f), 0.1f);
+                infoViews[i].Show();
                 for (int j = 0; j < pos.Length; j++)
                 {
                     if (j != i)
                     {
-                        transform.GetChild(j).localScale = Vector2.Lerp(transform.GetChild(j).localScale, new Vector2(0.8f, 0.8f), 0.1f);
+                        stages[j].transform.localScale = Vector2.Lerp(stages[j].transform.localScale, new Vector2(1f, 1f), 0.1f);
+                        infoViews[j].Hide();
                     }
                 }
             }

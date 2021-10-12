@@ -1,0 +1,20 @@
+SIGN IN & CREATE ACCOUNT PAGES
+ Font Atma 
+Sizes used: 
+22pts Semibold 
+
+
+OVERWORLD MAP
+Challenge Header : Font Atma Bold, 35 pts
+Challenge description: Open Sans 23pts 
+
+CODE PAGE    
+Blocks labelling: Open Sans, 15pts
+          
+TEXT COLORS
+Katapult blue- #2fb1db
+black- #000000
+White- ##ffffff
+
+USER FEEDBACK
+Atma bold, 50ts

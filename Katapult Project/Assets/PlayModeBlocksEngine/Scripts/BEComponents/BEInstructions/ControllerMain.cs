@@ -8,6 +8,7 @@ public class ControllerMain : BEInstruction
 {
     public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
     {
+        
         if (beBlock.BeBlockGroup.isActive)
         {
             BeController.PlayNextInside(beBlock);
