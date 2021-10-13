@@ -1,92 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1429794584268990450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea82279f292f4f6ebe47212017fa5f89, type: 3}
-  m_Name: LoadSceneNode
-  m_EditorClassIdentifier: 
-  ErrorNodeNameIsEmpty: 0
-  ErrorDuplicateNameFoundInGraph: 0
-  m_inputSockets:
-  - m_connectionMode: 1
-    m_connections:
-    - m_inputConnectionPoint: {x: 202, y: 4}
-      m_outputConnectionPoint: {x: -2, y: 4}
-      m_id: 319d5e99-6e9c-4d0a-98f3-4aab26c46102
-      m_inputNodeId: fb60a3d5-bf3d-4986-98dc-9200c78a267a
-      m_inputSocketId: 988e94e4-8dd3-4127-8e9c-d38a85280291
-      m_outputNodeId: 8bf8cdfd-78df-4492-ae28-57126916bc03
-      m_outputSocketId: d42be55f-227b-42c9-81ad-ceec722448f9
-    m_connectionPoints:
-    - {x: -2, y: 4}
-    - {x: 202, y: 4}
-    m_direction: 0
-    m_canBeDeleted: 0
-    m_canBeReordered: 0
-    m_curveModifier: 0
-    m_height: 24
-    m_width: 216
-    m_x: 0
-    m_y: 38
-    m_id: 988e94e4-8dd3-4127-8e9c-d38a85280291
-    m_nodeId: fb60a3d5-bf3d-4986-98dc-9200c78a267a
-    m_socketName: InputSocket_0
-    m_value: '{}'
-    m_valueTypeQualifiedName: Doozy.Engine.Nody.Connections.PassthroughConnection,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_outputSockets:
-  - m_connectionMode: 0
-    m_connections: []
-    m_connectionPoints:
-    - {x: -2, y: 4}
-    - {x: 202, y: 4}
-    m_direction: 1
-    m_canBeDeleted: 0
-    m_canBeReordered: 0
-    m_curveModifier: 0
-    m_height: 24
-    m_width: 216
-    m_x: 0
-    m_y: 62
-    m_id: 04e1e6a3-0ed0-43fd-8e67-8662ef371ec2
-    m_nodeId: fb60a3d5-bf3d-4986-98dc-9200c78a267a
-    m_socketName: OutputSocket_0
-    m_value: '{}'
-    m_valueTypeQualifiedName: Doozy.Engine.Nody.Connections.PassthroughConnection,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_nodeType: 4
-  m_allowDuplicateNodeName: 0
-  m_allowEmptyNodeName: 0
-  m_canBeDeleted: 1
-  m_debugMode: 0
-  m_useFixedUpdate: 0
-  m_useLateUpdate: 0
-  m_useUpdate: 0
-  m_height: 192
-  m_width: 216
-  m_x: -312
-  m_y: 60
-  m_minimumInputSocketsCount: 1
-  m_minimumOutputSocketsCount: 1
-  m_graphId: dfb62b65-f833-4da3-8522-9b14131723b8
-  m_id: fb60a3d5-bf3d-4986-98dc-9200c78a267a
-  m_name: Load Scene
-  m_notes: 
-  ErrorNoSceneName: 0
-  ErrorBadBuildIndex: 0
-  GetSceneBy: 1
-  LoadSceneMode: 0
-  AllowSceneActivation: 1
-  SceneActivationDelay: 0.1
-  SceneBuildIndex: 1
-  SceneName: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +21,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: dfb62b65-f833-4da3-8522-9b14131723b8
-  m_lastModified: 132785369407168997
+  m_lastModified: 132785640599381305
 --- !u!114 &2718306060560371577
 MonoBehaviour:
   m_ObjectHideFlags: 1

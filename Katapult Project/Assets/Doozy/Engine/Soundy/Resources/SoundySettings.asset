@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: cb4272a12b9b6de419fb11692d561608, type: 2}
   AutoKillIdleControllers: 1
-  ControllerIdleKillDuration: 20
-  IdleCheckInterval: 5
+  ControllerIdleKillDuration: 1
+  IdleCheckInterval: 1
   MinimumNumberOfControllers: 3

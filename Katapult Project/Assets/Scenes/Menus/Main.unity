@@ -2557,6 +2557,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404089465}
   m_CullTransparentMesh: 1
+--- !u!1 &414234246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414234248}
+  - component: {fileID: 414234247}
+  m_Layer: 0
+  m_Name: Soundy Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &414234247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414234246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd032348cab27545ba8b7eca1c0c9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &414234248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414234246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &428330009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,8 +3657,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -5023,7 +5066,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 211857538}
 --- !u!114 &445317259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6319,8 +6361,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Uncategorized
@@ -7728,7 +7770,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 671648982}
 --- !u!114 &611733962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9973,8 +10014,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -11382,7 +11423,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 210262382}
 --- !u!114 &690399068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11958,7 +11998,7 @@ MonoBehaviour:
         SoundSource: 0
         DatabaseName: General
         SoundName: No Sound
-        AudioClip: {fileID: 0}
+        AudioClip: {fileID: 8300000, guid: fd1c4f75351762042af0f6315c6e2f1e, type: 3}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Fade
     PresetName: OutSlow
@@ -12092,7 +12132,7 @@ MonoBehaviour:
         SoundSource: 0
         DatabaseName: General
         SoundName: No Sound
-        AudioClip: {fileID: 0}
+        AudioClip: {fileID: 8300000, guid: fd1c4f75351762042af0f6315c6e2f1e, type: 3}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Uncategorized
     PresetName: Default
@@ -12391,10 +12431,10 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 0
+        SoundSource: 1
         DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
+        SoundName: 
+        AudioClip: {fileID: 8300000, guid: fd1c4f75351762042af0f6315c6e2f1e, type: 3}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Fade
     PresetName: InSlow
@@ -13956,8 +13996,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -15365,7 +15405,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 2147114071}
 --- !u!114 &859382463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17311,8 +17350,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Alerts
+        SoundName: Positive Pop Remove
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     OnToggleOn:
@@ -17331,8 +17370,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Alerts
+        SoundName: Positive Pop Pick Up
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Uncategorized
@@ -17974,7 +18013,6 @@ MonoBehaviour:
       m_Calls: []
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 1001000714}
   ToggleProgressor: {fileID: 0}
 --- !u!114 &990046406
 MonoBehaviour:
@@ -22050,8 +22088,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -23459,7 +23497,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 1078659884}
 --- !u!114 &1534310191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24478,8 +24515,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -25887,7 +25924,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 404089467}
 --- !u!114 &1563022364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27977,8 +28013,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Alerts
+        SoundName: Alert 4
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Slide
@@ -29798,8 +29834,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Uncategorized
@@ -31207,7 +31243,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 2012273601}
 --- !u!114 &1985068365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32301,8 +32336,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -33710,7 +33745,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 793795561}
 --- !u!114 &2006411447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37023,8 +37057,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: Example Clicks
+        SoundName: Cartoon Blip
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Flip
@@ -38432,7 +38466,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 1019505197}
 --- !u!114 &2146761517
 MonoBehaviour:
   m_ObjectHideFlags: 0
