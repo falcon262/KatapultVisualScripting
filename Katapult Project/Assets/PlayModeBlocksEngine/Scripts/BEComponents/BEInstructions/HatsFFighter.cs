@@ -19,6 +19,7 @@ public class HatsFFighter : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Hat, 4);
+		UserController.instance.hat = "4";
 		BeController.PlayNextOutside(beBlock);
 	}
  

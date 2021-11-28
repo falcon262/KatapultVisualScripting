@@ -12,6 +12,26 @@ TagManager:
   - var
   - saveLoadMenu
   - mainCanvas
+  - crystal
+  - SafetyZone
+  - Adult
+  - ChargingStation
+  - Animal
+  - Destination
+  - Robot
+  - Work
+  - Claw
+  - Screw
+  - Environment
+  - Child
+  - Barricade
+  - Vet
+  - ReleaseSpot
+  - School
+  - chest
+  - nest
+  - egg
+  - turn
   layers:
   - Default
   - TransparentFX

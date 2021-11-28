@@ -19,6 +19,7 @@ public class BottomsEngineer : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 13);
+		UserController.instance.bottom = "13";
 		BeController.PlayNextOutside(beBlock);
 	}
  

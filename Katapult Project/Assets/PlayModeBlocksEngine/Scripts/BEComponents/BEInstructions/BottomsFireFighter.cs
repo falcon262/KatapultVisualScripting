@@ -19,6 +19,7 @@ public class BottomsFireFighter : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 11);
+		UserController.instance.bottom = "11";
 		BeController.PlayNextOutside(beBlock);
 	}
  

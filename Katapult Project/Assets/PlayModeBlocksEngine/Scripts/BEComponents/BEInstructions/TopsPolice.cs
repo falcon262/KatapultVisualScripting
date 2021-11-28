@@ -19,6 +19,7 @@ public class TopsPolice : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Shirt, 10);
+		UserController.instance.top = "10";
 		BeController.PlayNextOutside(beBlock);
 	}
  

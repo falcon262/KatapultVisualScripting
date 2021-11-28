@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BETargetObject : MonoBehaviour
 {
     public List<BEBlock> beBlockGroupsList;
     public AudioSource beAudioSource;
     private BEController beController;
+
+    public int itemCount;
+    public List<GameObject> items;
+
+    public int score;
+    public int crystalCount;
+    public TextMeshProUGUI scoreText;
     public BEController BeController { get => beController; }
 
     //v1.1 -Enable programming env from target object inspector
@@ -111,7 +119,9 @@ public class BETargetObject : MonoBehaviour
 
     void Start()
     {
+        crystalCount = GameObject.FindObjectsOfType<Crystals>().Length;
         beBlockGroupsList = new List<BEBlock>();
+        items = new List<GameObject>();
         beAudioSource = GetComponent<AudioSource>();
     }
 }

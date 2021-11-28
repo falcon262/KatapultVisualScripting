@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/World Map.unity
     guid: 93f4a295e4ebfec409b4ba45d96aec9e
+  - enabled: 1
+    path: Assets/Scenes/Objectives/ModernCity.unity
+    guid: 16b751000285e8c44a1c13ba78c3ff7e
+  - enabled: 1
+    path: Assets/Scenes/Objectives/SpaceWorld.unity
+    guid: ada87c8e3ac5822458bb087743f719ed
+  - enabled: 1
+    path: Assets/Scenes/Objectives/JurrasicWorld.unity
+    guid: 9353563296af01946a2b189b20dc7d27
   m_configObjects: {}

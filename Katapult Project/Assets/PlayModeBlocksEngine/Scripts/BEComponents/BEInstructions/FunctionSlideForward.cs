@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AdvancedCustomizableSystem;
 
 public class FunctionSlideForward : BEInstruction
 {
@@ -31,7 +32,7 @@ public class FunctionSlideForward : BEInstruction
         {
             if (counterForMovement <= movementDuration)
             {
-                counterForMovement += Time.deltaTime * 5f;
+                counterForMovement += Time.deltaTime * 3f;
                 if (targetObject.GetComponent<Collider2D>())
                 {
                     direction = targetObject.transform.right;
@@ -41,6 +42,9 @@ public class FunctionSlideForward : BEInstruction
                     direction = targetObject.transform.forward;
                 }
                 //targetObject.Wheels.SetBool("IsMoving", true);
+                foreach (Animator a in targetObject.gameObject.GetComponent<CharacterCustomization>().GetAnimators())
+                    a.SetBool("walk", true);
+                
                 targetObject.transform.position = Vector3.Lerp(startPos, startPos + direction, counterForMovement / movementDuration);
             }
             else
@@ -51,6 +55,8 @@ public class FunctionSlideForward : BEInstruction
                 if (counterForRepetitions <= 0)
                 {
                     //targetObject.Wheels.SetBool("IsMoving", false);
+                    foreach (Animator a in targetObject.gameObject.GetComponent<CharacterCustomization>().GetAnimators())
+                        a.SetBool("walk", false);
                     beBlock.beBlockFirstPlay = true;
                     BeController.PlayNextOutside(beBlock);
                 }
@@ -60,7 +66,7 @@ public class FunctionSlideForward : BEInstruction
         {
             if (counterForMovement <= movementDuration)
             {
-                counterForMovement += Time.deltaTime * 5f;
+                counterForMovement += Time.deltaTime * 3f;
                 if (targetObject.GetComponent<Collider2D>())
                 {
                     direction = targetObject.transform.right;

@@ -19,6 +19,7 @@ public class TopsEngineer : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Shirt, 13);
+		UserController.instance.top = "13";
 		BeController.PlayNextOutside(beBlock);
 	}
  

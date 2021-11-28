@@ -19,6 +19,7 @@ public class HatsPolice : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Hat, 3);
+		UserController.instance.hat = "3";
 		BeController.PlayNextOutside(beBlock);
 	}
  

@@ -221,6 +221,7 @@ public class UIDrop : MonoBehaviour, IDropHandler, IPointerClickHandler
         try
         {
             ghostTransform.parent.GetComponent<BEBlock>().beChildBlocksList.Insert(ghostTransform.GetSiblingIndex() - 2, droppedBlock);
+            FindObjectOfType<ModernCity>().blockCount++;
         }
         catch
         {

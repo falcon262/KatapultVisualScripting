@@ -5072,6 +5072,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beBlockGroupsList: []
   beAudioSource: {fileID: 0}
+  itemCount: 0
+  items: []
+  score: 0
+  crystalCount: 0
+  scoreText: {fileID: 0}
   beProgrammingEnv: {fileID: 0}
   enableProgrammingEnv: 1
 --- !u!54 &5538614847972775962

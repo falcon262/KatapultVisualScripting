@@ -19,6 +19,7 @@ public class ShoesDoc : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Shoes, 12);
+		UserController.instance.shoe = "12";
 		BeController.PlayNextOutside(beBlock);
 	}
  

@@ -15,11 +15,15 @@ MonoBehaviour:
   CategoryName: Objectives
   DatabaseType: 0
   Names:
-  - Run
+  - Avartar
+  - CloseInstructions
   - Create
   - Help
-  - Avartar
-  - Previous
   - Next
-  - CloseInstructions
+  - Pause
+  - Previous
+  - Run
   - Skip
+  - ToWorldMap
+  - Reload
+  - Share

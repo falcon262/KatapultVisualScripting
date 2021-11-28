@@ -19,6 +19,7 @@ public class TopsFireFighter : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Shirt, 11);
+		UserController.instance.top = "11";
 		BeController.PlayNextOutside(beBlock);
 	}
  

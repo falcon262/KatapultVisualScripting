@@ -19,6 +19,7 @@ public class Hair02 : BEInstruction
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
 		targetObject.gameObject.GetComponent<CharacterCustomization>().SetHairByIndex(1);
+		UserController.instance.hair = "1";
 		BeController.PlayNextOutside(beBlock);
 	}
  
