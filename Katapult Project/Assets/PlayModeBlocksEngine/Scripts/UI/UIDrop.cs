@@ -67,6 +67,7 @@ public class UIDrop : MonoBehaviour, IDropHandler, IPointerClickHandler
             if (droppedBlock.BeController.ghostBlock.transform.parent != null)
             {
                 SetBlockAtGhostPos(droppedBlock);
+                UserController.instance.tick.Play();
             }
             else if (transform.name == "ProgrammingEnv")
             {
@@ -293,6 +294,7 @@ public class UIDrop : MonoBehaviour, IDropHandler, IPointerClickHandler
             BEBlock droppedBlock = BEEventSystem.SelectedBlock;
             SetBlockAtIndex(droppedBlock, CalculateIndex());
             BEEventSystem.SetSelectedBlock(null);
+            
         }
     }
 

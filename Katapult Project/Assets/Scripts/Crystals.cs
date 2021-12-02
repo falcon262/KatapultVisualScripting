@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Crystals : MonoBehaviour
 {
+    public ParticleSystem effect;
+
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log(other.transform.gameObject.tag);
         if (other.transform.gameObject.tag == "Player")
         {
-            
+            effect.gameObject.transform.position = this.gameObject.transform.position;
+            effect.Play();
+            UserController.instance.zapCrystal.Play();
             other.transform.gameObject.GetComponent<BETargetObject>().score += 100;
             other.transform.gameObject.GetComponent<BETargetObject>().crystalCount -= 1;
             if(this.transform.gameObject.tag == "crystal" || this.transform.gameObject.tag == "egg")
@@ -19,6 +23,7 @@ public class Crystals : MonoBehaviour
             }
             other.transform.gameObject.GetComponent<BETargetObject>().scoreText.text = other.transform.gameObject.GetComponent<BETargetObject>().score.ToString();
             this.transform.gameObject.SetActive(false);
+            
         }
     }
 }

@@ -53,6 +53,8 @@ public class UIManager : MonoBehaviour
     public UIView MessageBox;
     public UIView[] infos;
     public UIView suitUpError;
+    public LeanToggle avatarToggle;
+
 
     [Header("Male Character")]
     public GameObject maleCharacter;
@@ -74,10 +76,13 @@ public class UIManager : MonoBehaviour
         if (UserController.instance.info.data.user.settings.sex == "Male")
         {
             onMale();
+            //avatarToggle.TurnOff();
+            
         }
         else if (UserController.instance.info.data.user.settings.sex == "Female")
         {
-            onFemale();
+            //onFemale();
+            avatarToggle.TurnOn();
         }
     }
 
@@ -117,61 +122,54 @@ public class UIManager : MonoBehaviour
         femaleCanvas.SetActive(false);
         Male.SetElementByIndex(ClothesPartType.Shirt, 1);
         Male.SetElementByIndex(ClothesPartType.Pants, 1);
+        UserController.instance.sex = "Male";
     }
 
     public void onFemale()
-    {
-        maleCharacter.SetActive(false);
-        maleCanvas.SetActive(false);
+    {        
         femaleCharacter.SetActive(true);
         femaleCanvas.SetActive(true);
+        maleCharacter.SetActive(false);
+        maleCanvas.SetActive(false);
         Female.SetElementByIndex(ClothesPartType.Shirt, 1);
         Female.SetElementByIndex(ClothesPartType.Pants, 1);
+        UserController.instance.sex = "Female";
     }
 
     public void NextInfo()
     {
-        try
+        foreach (LeanToggle toggle in instructionToggles)
         {
-            foreach (LeanToggle toggle in instructionToggles)
+            if (toggle.On)
             {
-                if (toggle.On)
+                int index = Array.IndexOf(instructionToggles, toggle);
+                if ((index + 1) < instructionToggles.Length)
                 {
-                    int index = Array.IndexOf(instructionToggles, toggle);
                     instructionToggles[index + 1].TurnOn();
                     infos[index].Hide();
                     infos[index + 1].Show();
                     break;
                 }
-            }
-        }
-        catch (Exception e)
-        {
 
-            Debug.Log(e.Message);
+            }
         }
     }
 
     public void PreviousInfo()
     {
-        try
+        foreach (LeanToggle toggle in instructionToggles)
         {
-            foreach (LeanToggle toggle in instructionToggles)
+            if (toggle.On)
             {
-                if (toggle.On)
+                int index = Array.IndexOf(instructionToggles, toggle);
+                if ((index - 1) >= 0)
                 {
-                    int index = Array.IndexOf(instructionToggles, toggle);
                     instructionToggles[index - 1].TurnOn();
                     infos[index].Hide();
                     infos[index - 1].Show();
                     break;
                 }
             }
-        }
-        catch (Exception e)
-        {
-
-            Debug.Log(e.Message);
         }
     }
 

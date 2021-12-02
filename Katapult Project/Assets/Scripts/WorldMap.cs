@@ -121,6 +121,11 @@ public class WorldMap : MonoBehaviour
     {
         SceneManager.LoadScene(5);
     }
+    
+    public void AvatarLoad()
+    {
+        SceneManager.LoadScene(1);
+    }
 
     public void SoundOn()
     {

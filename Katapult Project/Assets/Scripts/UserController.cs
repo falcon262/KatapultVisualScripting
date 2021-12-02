@@ -88,6 +88,9 @@ public class UserController : MonoBehaviour
     public string bottom = "";
     public string shoe = "";
 
+    public AudioSource tick;
+    public AudioSource zapCrystal;
+
     public static UserController instance;
 
     private void Awake()
