@@ -18,8 +18,16 @@ public class BottomsPolice : BEInstruction
 	// Use this for Functions
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
-		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 10);
-		UserController.instance.bottom = "10";
+		if (targetObject.transform.gameObject.name == "female_customizable")
+		{
+			targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 9);
+			UserController.instance.bottom = "9";
+		}
+		else
+		{
+			targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 10);
+			UserController.instance.bottom = "10";
+		}
 		BeController.PlayNextOutside(beBlock);
 	}
  

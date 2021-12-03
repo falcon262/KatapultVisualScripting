@@ -25,8 +25,21 @@ public class WorldMap : MonoBehaviour
     public GameObject lev3s2;
     public GameObject lev3s3;
 
+    public Sprite fullstar;
+
+    public GameObject[] leaders;
+
     private void Awake()
     {
+        StartCoroutine(UserController.instance.GetAllUsers());
+
+        string[] data = UserController.instance.info.data.user.settings.sex.Split(':');
+        UserController.instance.genderIndex = data[0];
+        UserController.instance.s1 = int.Parse(data[1]);
+        UserController.instance.s2 = int.Parse(data[2]);
+        UserController.instance.s3 = int.Parse(data[3]);
+        UserController.instance.sex = UserController.instance.genderIndex;
+
         if (String.IsNullOrEmpty(UserController.instance.info.data.user.score))
         {
             score.text = "0";
@@ -105,8 +118,65 @@ public class WorldMap : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(WelcomeMessage());
+    }
+
+    public void PopulateLeaderBoard()
+    {
+        try
+        {
+            for (int i = 0; i < leaders.Length; i++)
+            {
+                leaders[i].transform.Find("Username").GetComponent<TextMeshProUGUI>().text = UserController.instance.usersInfo.data[i].username;
+                leaders[i].transform.Find("Score").GetComponent<TextMeshProUGUI>().text = UserController.instance.usersInfo.data[i].score;
+
+                if (int.Parse(UserController.instance.usersInfo.data[i].score) >= 2000)
+                {
+                    leaders[i].transform.Find("star1").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star2").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star3").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star4").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star5").GetComponent<Image>().sprite = fullstar;
+                }
+                else if (int.Parse(UserController.instance.usersInfo.data[i].score) >= 1000 && int.Parse(UserController.instance.usersInfo.data[i].score) < 2000)
+                {
+                    leaders[i].transform.Find("star1").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star2").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star3").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star4").GetComponent<Image>().sprite = fullstar;
+                }
+                else if (int.Parse(UserController.instance.usersInfo.data[i].score) >= 500 && int.Parse(UserController.instance.usersInfo.data[i].score) < 1000)
+                {
+                    leaders[i].transform.Find("star1").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star2").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star3").GetComponent<Image>().sprite = fullstar;
+                }
+                else if (int.Parse(UserController.instance.usersInfo.data[i].score) >= 300 && int.Parse(UserController.instance.usersInfo.data[i].score) < 500)
+                {
+                    leaders[i].transform.Find("star1").GetComponent<Image>().sprite = fullstar;
+                    leaders[i].transform.Find("star2").GetComponent<Image>().sprite = fullstar;
+                }
+                else if (int.Parse(UserController.instance.usersInfo.data[i].score) >= 0 && int.Parse(UserController.instance.usersInfo.data[i].score) < 300)
+                {
+                    leaders[i].transform.Find("star1").GetComponent<Image>().sprite = fullstar;
+                }
+
+            }
+        }
+        catch (Exception e)
+        {
+
+            Debug.Log("Out of bounds: " + e);
+        }
+        
+    }
+
+    IEnumerator WelcomeMessage()
+    {
         Welcome.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = "Welcome " + UserController.instance.info.data.user.username;
         Welcome.Show();
+        yield return new WaitForSeconds(2f);
+        Welcome.Hide();
     }
 
     public void lev1Load()

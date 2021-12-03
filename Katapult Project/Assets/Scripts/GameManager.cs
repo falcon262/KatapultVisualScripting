@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour
                 //Print Body
                 Debug.Log(www.downloadHandler.text);
 
-                StartCoroutine(UserController.instance.UpdateGender(JsonUtility.FromJson<UserController.userInfo>(www.downloadHandler.text).data.user.id, UserController.instance.sex));
+                StartCoroutine(UserController.instance.UpdateGender(JsonUtility.FromJson<UserController.userInfo>(www.downloadHandler.text).data.user.id, UserController.instance.sex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
 /*                if (www.downloadHandler.text.Contains("false"))
                 {
                     Debug.Log("Error Occured(404)");

@@ -88,8 +88,14 @@ public class UserController : MonoBehaviour
     public string bottom = "";
     public string shoe = "";
 
+    public string genderIndex;
+    public int s1 = 0;
+    public int s2 = 0;
+    public int s3 = 0;
+
     public AudioSource tick;
     public AudioSource zapCrystal;
+    public AudioSource gameMusic;
 
     public static UserController instance;
 
@@ -107,8 +113,7 @@ public class UserController : MonoBehaviour
     }
 
     private void Start()
-    {
-        //StartCoroutine(GetAllUsers());
+    {   
         //StartCoroutine(UpdateSettings("", "31fcee14-e79f-475d-b67d-8f0758370438"));
         //StartCoroutine(UpdateScore("", "31fcee14-e79f-475d-b67d-8f0758370438"));
     }
@@ -147,6 +152,74 @@ public class UserController : MonoBehaviour
                 //Print Body
                 Debug.Log(www.downloadHandler.text);
                 instance.AllUsersParse(www.downloadHandler.text);
+
+                for (int i = 0; i < instance.usersInfo.data.Count; i++)
+                {
+                    for (int j = i+1; j < instance.usersInfo.data.Count; j++)
+                    {
+                        if (String.IsNullOrEmpty(instance.usersInfo.data[j].score) && String.IsNullOrEmpty(instance.usersInfo.data[i].score))
+                        {
+                            datas locVar = instance.usersInfo.data[j];
+                            locVar.score = "0";
+                            instance.usersInfo.data[j] = locVar;
+                            
+                            datas locVar2 = instance.usersInfo.data[i];
+                            locVar2.score = "0";
+                            instance.usersInfo.data[i] = locVar2;
+
+                            if (int.Parse(instance.usersInfo.data[j].score) > int.Parse(instance.usersInfo.data[i].score))
+                            {
+                                //Swap
+                                datas tmp = instance.usersInfo.data[i];
+                                instance.usersInfo.data[i] = instance.usersInfo.data[j];
+                                instance.usersInfo.data[j] = tmp;
+
+                            }
+                        }
+                        else if (String.IsNullOrEmpty(instance.usersInfo.data[j].score) && !String.IsNullOrEmpty(instance.usersInfo.data[i].score))
+                        {
+                            datas locVar = instance.usersInfo.data[j];
+                            locVar.score = "0";
+                            instance.usersInfo.data[j] = locVar;
+
+                            if (int.Parse(instance.usersInfo.data[j].score) > int.Parse(instance.usersInfo.data[i].score))
+                            {
+                                //Swap
+                                datas tmp = instance.usersInfo.data[i];
+                                instance.usersInfo.data[i] = instance.usersInfo.data[j];
+                                instance.usersInfo.data[j] = tmp;
+
+                            }
+                        }
+                        else if (!String.IsNullOrEmpty(instance.usersInfo.data[j].score) && String.IsNullOrEmpty(instance.usersInfo.data[i].score))
+                        {
+
+                            datas locVar2 = instance.usersInfo.data[i];
+                            locVar2.score = "0";
+                            instance.usersInfo.data[i] = locVar2;
+
+                            if (int.Parse(instance.usersInfo.data[j].score) > int.Parse(instance.usersInfo.data[i].score))
+                            {
+                                //Swap
+                                datas tmp = instance.usersInfo.data[i];
+                                instance.usersInfo.data[i] = instance.usersInfo.data[j];
+                                instance.usersInfo.data[j] = tmp;
+
+                            }
+                        }
+                        else
+                        {
+                            if (int.Parse(instance.usersInfo.data[j].score) > int.Parse(instance.usersInfo.data[i].score))
+                            {
+                                //Swap
+                                datas tmp = instance.usersInfo.data[i];
+                                instance.usersInfo.data[i] = instance.usersInfo.data[j];
+                                instance.usersInfo.data[j] = tmp;
+
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -269,8 +342,8 @@ public class UserController : MonoBehaviour
                 {
                     Debug.Log("User Registered Successfully");
                 }
-/*                instance.update = JsonUtility.FromJson<updateInfo>(www.downloadHandler.text);
-                instance.info.data.user.settings.sex = update.data.settings.sex;*/
+                instance.update = JsonUtility.FromJson<updateInfo>(www.downloadHandler.text);
+                instance.info.data.user.settings.sex = update.data.settings.sex;
             }
         }
     }

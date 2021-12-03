@@ -2690,8 +2690,13 @@ MonoBehaviour:
   top: 
   bottom: 
   shoe: 
+  genderIndex: 
+  s1: 0
+  s2: 0
+  s3: 0
   tick: {fileID: 393853233}
   zapCrystal: {fileID: 393853232}
+  gameMusic: {fileID: 393853231}
 --- !u!82 &393853231
 AudioSource:
   m_ObjectHideFlags: 0

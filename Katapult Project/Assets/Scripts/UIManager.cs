@@ -65,25 +65,36 @@ public class UIManager : MonoBehaviour
     public GameObject femaleCanvas;
 
     public VideoPlayer vidPlayer;
+    bool vidIsPlaying = true;
     private void Awake()
     {
         vidPlayer.url = Path.Combine(Application.streamingAssetsPath, "Outboarding Story.mp4");
+        UserController.instance.gameMusic.Stop();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (UserController.instance.info.data.user.settings.sex == "Male")
+        if (!String.IsNullOrEmpty(UserController.instance.sex))
         {
+            if (UserController.instance.sex == "Male")
+            {
+                onMale();
+                //avatarToggle.TurnOff();
+
+            }
+            else if (UserController.instance.sex == "Female")
+            {
+                //onFemale();
+                avatarToggle.TurnOn();
+            }
+        }
+        else
+        {
+            UserController.instance.sex = "Male";
             onMale();
-            //avatarToggle.TurnOff();
-            
         }
-        else if (UserController.instance.info.data.user.settings.sex == "Female")
-        {
-            //onFemale();
-            avatarToggle.TurnOn();
-        }
+        
     }
 
     public void CloseInfo()
@@ -108,7 +119,7 @@ public class UIManager : MonoBehaviour
         else
         {
             suitUpError.Hide();
-            StartCoroutine(UserController.instance.UpdateSettings(UserController.instance.info.data.user.id, UserController.instance.sex, UserController.instance.hat, UserController.instance.hair, UserController.instance.top, UserController.instance.bottom, UserController.instance.shoe));
+            StartCoroutine(UserController.instance.UpdateSettings(UserController.instance.info.data.user.id, UserController.instance.sex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3, UserController.instance.hat, UserController.instance.hair, UserController.instance.top, UserController.instance.bottom, UserController.instance.shoe));
             suitUpError.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = "Loading...";
         }
 
@@ -173,9 +184,20 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void GameMusicOn() => UserController.instance.gameMusic.Play();
+
     // Update is called once per frame
     void Update()
     {
+        if (vidIsPlaying)
+        {
+            if (!vidPlayer.isPlaying)
+            {
+                GameMusicOn();
+                vidIsPlaying = false;
+            }
+        }
+
         TypeSwitch();
         TypeSwitchF();
     }

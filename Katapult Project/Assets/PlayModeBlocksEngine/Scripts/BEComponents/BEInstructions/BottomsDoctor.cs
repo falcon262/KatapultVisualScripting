@@ -18,8 +18,16 @@ public class BottomsDoctor : BEInstruction
 	// Use this for Functions
 	public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
 	{
-		targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 12);
-		UserController.instance.bottom = "12";
+		if(targetObject.transform.gameObject.name == "female_customizable")
+        {
+			targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 11);
+			UserController.instance.bottom = "11";
+		}
+        else
+        {
+			targetObject.gameObject.GetComponent<CharacterCustomization>().SetElementByIndex(ClothesPartType.Pants, 12);
+			UserController.instance.bottom = "12";
+		}
 		BeController.PlayNextOutside(beBlock);
 	}
  

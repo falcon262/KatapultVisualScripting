@@ -48,7 +48,7 @@ public class ModernCity : MonoBehaviour
 
     private void Awake()
     {
-        if (UserController.instance.info.data.user.settings.sex == "Male")
+        if (UserController.instance.genderIndex == "Male")
         {
             male.gameObject.SetActive(true);
             follower.target = male.gameObject.transform;
@@ -67,7 +67,7 @@ public class ModernCity : MonoBehaviour
             male.SetElementByIndex(ClothesPartType.Shoes, int.Parse(UserController.instance.info.data.user.settings.shoe));
         }
 
-        else if (UserController.instance.info.data.user.settings.sex == "Female")
+        else if (UserController.instance.genderIndex == "Female")
         {
             female.gameObject.SetActive(true);
             follower.target = female.gameObject.transform;
@@ -99,8 +99,28 @@ public class ModernCity : MonoBehaviour
                 starCenter.Show();
                 starRight.Show();
 
+                male.transform.gameObject.GetComponent<BETargetObject>().score += (int)timer;
+                finalScore.text = male.transform.gameObject.GetComponent<BETargetObject>().score.ToString();
+                finalTimeUsed.text = ((int)(startTime - timer)).ToString() + "s";
+                blocksUsed.text = blockCount.ToString();
+
                 if(SceneManager.GetActiveScene().name == "ModernCity")
                 {
+
+                    if (male.transform.gameObject.GetComponent<BETargetObject>().score > UserController.instance.s1)
+                    {
+                        UserController.instance.s1 = male.transform.gameObject.GetComponent<BETargetObject>().score;
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+                    else
+                    {
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+
                     if ((int)timer >= 120 && blockCount < 8)
                     {
                         starLeftE.SetActive(true);
@@ -122,6 +142,20 @@ public class ModernCity : MonoBehaviour
                 }
                 else if (SceneManager.GetActiveScene().name == "SpaceWorld")
                 {
+                    if (male.transform.gameObject.GetComponent<BETargetObject>().score > UserController.instance.s2)
+                    {
+                        UserController.instance.s2 = male.transform.gameObject.GetComponent<BETargetObject>().score;
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+                    else
+                    {
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+
                     if ((int)timer >= 120 && blockCount < 14)
                     {
                         starLeftE.SetActive(true);
@@ -144,6 +178,20 @@ public class ModernCity : MonoBehaviour
                 
                 else if (SceneManager.GetActiveScene().name == "JurrasicWorld")
                 {
+                    if (male.transform.gameObject.GetComponent<BETargetObject>().score > UserController.instance.s3)
+                    {
+                        UserController.instance.s3 = male.transform.gameObject.GetComponent<BETargetObject>().score;
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+                    else
+                    {
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+
                     if ((int)timer >= 240 && blockCount < 10)
                     {
                         starLeftE.SetActive(true);
@@ -164,11 +212,7 @@ public class ModernCity : MonoBehaviour
                     }
                 }
 
-                male.transform.gameObject.GetComponent<BETargetObject>().score += (int)timer;
-                finalScore.text = male.transform.gameObject.GetComponent<BETargetObject>().score.ToString();
-                StartCoroutine(UserController.instance.UpdateScore(finalScore.text, UserController.instance.info.data.user.id));
-                finalTimeUsed.text = ((int)(startTime - timer)).ToString() + "s";
-                blocksUsed.text = blockCount.ToString();
+                
             }
             else if (timer <= 0 && timeUp == false)
             {
@@ -193,8 +237,27 @@ public class ModernCity : MonoBehaviour
                 starCenter.Show();
                 starRight.Show();
 
+                female.transform.gameObject.GetComponent<BETargetObject>().score += (int)timer;
+                finalScore.text = female.transform.gameObject.GetComponent<BETargetObject>().score.ToString();
+                finalTimeUsed.text = ((int)(startTime - timer)).ToString() + "s";
+                blocksUsed.text = blockCount.ToString();
+
                 if (SceneManager.GetActiveScene().name == "ModernCity")
                 {
+                    if (female.transform.gameObject.GetComponent<BETargetObject>().score > UserController.instance.s1)
+                    {
+                        UserController.instance.s1 = female.transform.gameObject.GetComponent<BETargetObject>().score;
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+                    else
+                    {
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+
                     if ((int)timer >= 120 && blockCount < 8)
                     {
                         starLeftE.SetActive(true);
@@ -216,6 +279,20 @@ public class ModernCity : MonoBehaviour
                 }
                 else if (SceneManager.GetActiveScene().name == "SpaceWorld")
                 {
+                    if (female.transform.gameObject.GetComponent<BETargetObject>().score > UserController.instance.s2)
+                    {
+                        UserController.instance.s2 = female.transform.gameObject.GetComponent<BETargetObject>().score;
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+                    else
+                    {
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+
                     if ((int)timer >= 120 && blockCount < 14)
                     {
                         starLeftE.SetActive(true);
@@ -237,6 +314,20 @@ public class ModernCity : MonoBehaviour
                 }
                 else if (SceneManager.GetActiveScene().name == "JurrasicWorld")
                 {
+                    if (female.transform.gameObject.GetComponent<BETargetObject>().score > UserController.instance.s3)
+                    {
+                        UserController.instance.s3 = female.transform.gameObject.GetComponent<BETargetObject>().score;
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+                    else
+                    {
+                        StartCoroutine(UserController.instance.UpdateGender(UserController.instance.info.data.user.id, UserController.instance.genderIndex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
+                        int highscore = UserController.instance.s1 + UserController.instance.s2 + UserController.instance.s3;
+                        StartCoroutine(UserController.instance.UpdateScore(highscore.ToString(), UserController.instance.info.data.user.id));
+                    }
+
                     if ((int)timer >= 240 && blockCount < 6)
                     {
                         starLeftE.SetActive(true);
@@ -256,12 +347,6 @@ public class ModernCity : MonoBehaviour
                         StartCoroutine(UserController.instance.UpdateSettings("213141", UserController.instance.info.data.user.id));
                     }
                 }
-
-                female.transform.gameObject.GetComponent<BETargetObject>().score += (int)timer;
-                finalScore.text = female.transform.gameObject.GetComponent<BETargetObject>().score.ToString();
-                StartCoroutine(UserController.instance.UpdateScore(finalScore.text, UserController.instance.info.data.user.id));
-                finalTimeUsed.text = ((int)(startTime - timer)).ToString() + "s";
-                blocksUsed.text = blockCount.ToString();
             }
             else if (timer <= 0 && timeUp == false)
             {
