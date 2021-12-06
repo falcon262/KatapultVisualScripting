@@ -294,7 +294,7 @@ public class UIDrop : MonoBehaviour, IDropHandler, IPointerClickHandler
             BEBlock droppedBlock = BEEventSystem.SelectedBlock;
             SetBlockAtIndex(droppedBlock, CalculateIndex());
             BEEventSystem.SetSelectedBlock(null);
-            
+
         }
     }
 

@@ -24,9 +24,9 @@ public class SaveLoadMenu : SaveLoadCode
         get
         {
             Transform env = null;
-            foreach (Transform child in transform.parent)
+            foreach(Transform child in transform.parent)
             {
-                if (child.name == "ProgrammingEnv")
+                if(child.name == "ProgrammingEnv")
                 {
                     env = child;
                 }
@@ -48,7 +48,7 @@ public class SaveLoadMenu : SaveLoadCode
     {
         //inherited from SaveLoadCode
         blocksPrefabsPath = "prefabs/Blocks/";
-
+        
     }
 
     void Update()
@@ -119,7 +119,7 @@ public class SaveLoadMenu : SaveLoadCode
 
     public void CloseConfirmDeletePanel()
     {
-        if (ProgrammingEnv.GetComponent<SaveLoadCode>().dialogOption == DialogOptions.save)
+        if(ProgrammingEnv.GetComponent<SaveLoadCode>().dialogOption == DialogOptions.save)
             transform.GetChild(3).gameObject.SetActive(true);
         if (ProgrammingEnv.GetComponent<SaveLoadCode>().dialogOption == DialogOptions.load)
             transform.GetChild(4).gameObject.SetActive(true);
@@ -132,7 +132,7 @@ public class SaveLoadMenu : SaveLoadCode
     public void ConfirmDeleteCode()
     {
         ProgrammingEnv.GetComponent<SaveLoadCode>().BEDeleteCode(FullPath);
-
+        
         CloseConfirmDeletePanel();
     }
 

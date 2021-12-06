@@ -1,10 +1,16 @@
-﻿using System;
+﻿/*
+ * Play Mode Blocks Engine - Version 1.3
+ * 
+ * Daniel C Menezes
+ * http://danielcmcg.github.io
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 /// <summary>
 /// This Class defines the blocks model, it contains methods that are used to set up and get information from each BEBlock object
@@ -217,7 +223,7 @@ public class BEBlock : MonoBehaviour
                 // v1.3 -Autoset and fix Operation Blocks' inputs size and alignment
                 blockHeader.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(100, 30);
                 HorizontalLayoutGroup horizontalLayoutGroup = blockHeader.GetComponent<HorizontalLayoutGroup>();
-                //horizontalLayoutGroup.padding.left = 0;
+                horizontalLayoutGroup.padding.left = 0;
                 horizontalLayoutGroup.childAlignment = TextAnchor.MiddleCenter;
                 contentSizeFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
                 contentSizeFitter.verticalFit = ContentSizeFitter.FitMode.Unconstrained;

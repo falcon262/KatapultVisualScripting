@@ -10,13 +10,13 @@ public class FunctionSlideForward : BEInstruction
     float movementDuration = 0.5f; //seconds
     Vector3 startPos;
     Vector3 direction;
-    
+
 
     public override void BEFunction(BETargetObject targetObject, BEBlock beBlock)
     {
         if (beBlock.beBlockFirstPlay)
         {
-            
+
 
             counterForRepetitions = (int)(beBlock.BeInputs.numberValues[0]);
             startPos = targetObject.transform.position;
@@ -28,7 +28,7 @@ public class FunctionSlideForward : BEInstruction
             startPos = targetObject.transform.position;
         }
 
-        if(counterForRepetitions > 0)
+        if (counterForRepetitions > 0)
         {
             if (counterForMovement <= movementDuration)
             {
@@ -44,7 +44,7 @@ public class FunctionSlideForward : BEInstruction
                 //targetObject.Wheels.SetBool("IsMoving", true);
                 foreach (Animator a in targetObject.gameObject.GetComponent<CharacterCustomization>().GetAnimators())
                     a.SetBool("walk", true);
-                
+
                 targetObject.transform.position = Vector3.Lerp(startPos, startPos + direction, counterForMovement / movementDuration);
             }
             else
@@ -102,7 +102,7 @@ public class FunctionSlideForward : BEInstruction
             }
         }
 
-        
+
 
     }
 

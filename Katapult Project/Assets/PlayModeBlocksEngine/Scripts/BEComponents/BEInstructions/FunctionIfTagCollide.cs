@@ -28,33 +28,19 @@ public class FunctionIfTagCollide : BEInstruction
         }
         else if (targetObject.GetComponent<Collider>())
         {
-            
-            //Collider[] hitColliders = Physics.OverlapBox(targetObject.transform.position, transform.localScale / 2, Quaternion.identity);
-
-            value = "0";
-            RaycastHit hit;
-            if (Physics.Raycast(targetObject.transform.position, targetObject.transform.TransformDirection(Vector3.forward), out hit, 15f))
-            {
-                if (beBlock.BeInputs.stringValues[0] == hit.transform.gameObject.tag)
-                {
-                    value = "1";
-                }
-                else
-                    value = "0";
-            }
-            /*int i = 0;
+            Collider[] hitColliders = Physics.OverlapBox(targetObject.transform.position, transform.localScale / 2, Quaternion.identity);
+            int i = 0;
 
             while (i < hitColliders.Length)
             {
                 value = "0";
-                Debug.Log("Hit : " + hitColliders[i].name + i);
                 if (beBlock.BeInputs.stringValues[0] == hitColliders[i].tag)
                 {
                     value = "1";
                     break;
                 }
                 i++;
-            }*/
+            }
         }
 
         return value;

@@ -479,7 +479,7 @@ public class SaveLoadCode : MonoBehaviour
     //-- clear programming environment --
     public void BEClearCode()
     {
-        for (int i = beTargetObject.beBlockGroupsList.Count - 1; i >= 0; i--)
+        for (int i = beTargetObject.beBlockGroupsList.Count-1; i >= 0; i--)
         {
             UIDrag uiDrag = beTargetObject.beBlockGroupsList[i].GetComponent<UIDrag>();
             uiDrag.DragBlock();

@@ -12,7 +12,6 @@ public class OperationEqual : BEInstruction
     {
         if (beBlock.BeInputs.isString)
         {
-            
             if (beBlock.BeInputs.stringValues[0] == beBlock.BeInputs.stringValues[1])
             {
                 result = "1";

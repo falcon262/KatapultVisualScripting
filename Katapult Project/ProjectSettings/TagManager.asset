@@ -4,34 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - obj
-  - wall
-  - rightClickMenu
-  - programmingEnv
-  - onDragCanvas
-  - var
-  - saveLoadMenu
   - mainCanvas
-  - crystal
-  - SafetyZone
-  - Adult
-  - ChargingStation
-  - Animal
-  - Destination
-  - Robot
-  - Work
-  - Claw
-  - Screw
-  - Environment
-  - Child
-  - Barricade
-  - Vet
-  - ReleaseSpot
-  - School
-  - chest
-  - nest
-  - egg
-  - turn
+  - onDragCanvas
+  - programmingEnv
+  - rightClickMenu
+  - saveLoadMenu
+  - wall
+  - obj
   layers:
   - Default
   - TransparentFX
@@ -41,8 +20,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - PostProcessing
+  - Functions
   - 
   - 
   - 

@@ -1,9 +1,17 @@
-﻿using System.Collections;
+﻿/*
+ * Play Mode Blocks Engine - Version 1.3
+ * 
+ * Daniel C Menezes
+ * http://danielcmcg.github.io
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+//v1.2 -Added BEJoystick (virtual joystick), BEJoystickButton and BEJoystick Trigger/Event Blocks
 public class BEJoystick : MonoBehaviour
 {
     public BEJoystickButton arrowUpButton;

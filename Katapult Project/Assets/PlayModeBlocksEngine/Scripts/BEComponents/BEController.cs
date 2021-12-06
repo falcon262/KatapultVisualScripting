@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * Play Mode Blocks Engine - Version 1.3
+ * 
+ * Daniel C Menezes
+ * http://danielcmcg.github.io
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
