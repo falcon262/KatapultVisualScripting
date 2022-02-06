@@ -25,6 +25,11 @@ public class WorldMap : MonoBehaviour
     public GameObject lev3s2;
     public GameObject lev3s3;
 
+    public Image sound;
+    public Sprite soundOn;
+    public Sprite soundOff;
+    public bool musicOn = true;
+
     public Sprite fullstar;
 
     public GameObject[] leaders;
@@ -116,6 +121,22 @@ public class WorldMap : MonoBehaviour
         
     }
 
+    public void musicTrigger()
+    {
+        if (musicOn)
+        {
+            musicOn = false;
+            sound.sprite = soundOff;
+            UserController.instance.gameMusic.Stop();
+        }
+        else
+        {
+            musicOn = true;
+            sound.sprite = soundOn;
+            UserController.instance.gameMusic.Play();
+        }
+    }
+
     private void Start()
     {
         StartCoroutine(WelcomeMessage());
@@ -195,15 +216,5 @@ public class WorldMap : MonoBehaviour
     public void AvatarLoad()
     {
         SceneManager.LoadScene(1);
-    }
-
-    public void SoundOn()
-    {
-
-    }
-
-    public void SoundOff()
-    {
-
-    }  
+    } 
 }

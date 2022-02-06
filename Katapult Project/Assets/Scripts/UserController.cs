@@ -97,6 +97,9 @@ public class UserController : MonoBehaviour
     public AudioSource zapCrystal;
     public AudioSource gameMusic;
 
+    
+    public bool isRestart;
+
     public static UserController instance;
 
     private void Awake()
@@ -113,7 +116,7 @@ public class UserController : MonoBehaviour
     }
 
     private void Start()
-    {   
+    {
         //StartCoroutine(UpdateSettings("", "31fcee14-e79f-475d-b67d-8f0758370438"));
         //StartCoroutine(UpdateScore("", "31fcee14-e79f-475d-b67d-8f0758370438"));
     }

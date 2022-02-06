@@ -21,6 +21,7 @@ MonoBehaviour:
   - Level2On
   - Level3
   - Level3On
+  - Music
   - OverworldInstruction
   - SoundOnOff
   - UserInfo

@@ -46,6 +46,12 @@ public class ModernCity : MonoBehaviour
     public Button femaleRun;
     public Dino dino;
 
+    public InputField saveInput;
+    public InputField saveInputF;
+    public SaveLoadMenu saveMenu;
+    public SaveLoadMenu saveMenuF;
+
+
     private void Awake()
     {
         if (UserController.instance.genderIndex == "Male")
@@ -65,6 +71,7 @@ public class ModernCity : MonoBehaviour
             male.SetElementByIndex(ClothesPartType.Shirt, int.Parse(UserController.instance.info.data.user.settings.top));
             male.SetElementByIndex(ClothesPartType.Pants, int.Parse(UserController.instance.info.data.user.settings.bottom));
             male.SetElementByIndex(ClothesPartType.Shoes, int.Parse(UserController.instance.info.data.user.settings.shoe));
+
         }
 
         else if (UserController.instance.genderIndex == "Female")
@@ -371,6 +378,39 @@ public class ModernCity : MonoBehaviour
         MessageBox.Hide();
         StartCoroutine(StartTimer());
         skybox.Paused = false;
+        if (UserController.instance.isRestart)
+        {
+            if (UserController.instance.genderIndex == "Male")
+            {
+                try
+                {
+                    saveInput.text = "temp.BE";
+                    saveMenu.Load();
+                    saveInput.text = "";
+
+                }
+                catch (Exception e)
+                {
+
+                    Debug.Log(e);
+                }
+                
+            }
+            else if (UserController.instance.genderIndex == "Female")
+            {
+                try
+                {
+                    saveInputF.text = "temp.BE";
+                    saveMenuF.Load();
+                    saveInput.text = "";
+                }
+                catch (Exception e)
+                {
+
+                    Debug.Log(e);
+                }
+            }
+        }
     }
 
     public void OpenInfo()
@@ -381,7 +421,7 @@ public class ModernCity : MonoBehaviour
 
     public void setDino()
     {
-        dino.moveSpeed = 4.8f;
+        dino.moveSpeed = 4.5f;
         dino.transform.gameObject.GetComponentInChildren<Animator>().SetBool("Follow", true);
     }
 
@@ -407,13 +447,51 @@ public class ModernCity : MonoBehaviour
         }
     }
 
+    public void Back()
+    {
+        UserController.instance.isRestart = false;
+    }
+
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (UserController.instance.genderIndex == "Male")
+        {
+                UserController.instance.isRestart = true;
+                try
+                {
+                    saveInput.text = "temp";
+                    saveMenu.ConfirmSaveCode();
+                }
+                catch (Exception e)
+                {
+
+                    Debug.Log(e);
+                }
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else if (UserController.instance.genderIndex == "Female")
+        {
+                UserController.instance.isRestart = true;
+                try
+                {
+                    saveInputF.text = "temp";
+                    saveMenuF.ConfirmSaveCode();
+                }
+                catch (Exception e)
+                {
+
+                    Debug.Log(e);
+                }
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        
+        
     }
 
     public void ToHome()
     {
+        UserController.instance.isRestart = false;
         SceneManager.LoadScene(2);
     }
 

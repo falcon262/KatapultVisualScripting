@@ -16,4 +16,16 @@ public class Deviation : MonoBehaviour
             modernCity.starRight.Show();
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.gameObject.tag == "Player")
+        {
+            modernCity.timeUp = true;
+            modernCity.ChallengeComplete.Show();
+            modernCity.starLeft.Show();
+            modernCity.starCenter.Show();
+            modernCity.starRight.Show();
+        }
+    }
 }

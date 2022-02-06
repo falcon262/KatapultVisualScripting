@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 0f10af3d80afbd04ebe4c32bc8f6ceef, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0f10af3d80afbd04ebe4c32bc8f6ceef,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -541,11 +542,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Travel to the future and trace geometric shapes to collect the crystals.
-    \n\nYou will learn about shapes and repeat loops."
+  m_text: "Travel to space and figure out patterns to collect the crystals. \n\nYou
+    will learn about repeat loops."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25a6fb10aeccebe4d8723011ae532728, type: 2}
-  m_sharedMaterial: {fileID: -3731469934711745088, guid: 25a6fb10aeccebe4d8723011ae532728, type: 2}
+  m_sharedMaterial: {fileID: -3731469934711745088, guid: 25a6fb10aeccebe4d8723011ae532728,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1274,7 +1276,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1381,7 +1384,7 @@ RectTransform:
   m_Children:
   - {fileID: 155907718}
   m_Father: {fileID: 1530159401}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2428,6 +2431,2432 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116382286}
   m_CullTransparentMesh: 1
+--- !u!1 &119135841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119135842}
+  - component: {fileID: 119135845}
+  - component: {fileID: 119135846}
+  - component: {fileID: 119135844}
+  - component: {fileID: 119135843}
+  m_Layer: 0
+  m_Name: Button - SoundOnOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &119135842
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119135841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1920670595}
+  m_Father: {fileID: 1530159401}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 80, y: 80}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &119135843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119135841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d12bfc32d0d797428cf0191288caabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DebugMode: 0
+  StartPosition: {x: 0, y: 0, z: 0}
+  StartRotation: {x: 0, y: 0, z: 0}
+  StartScale: {x: 1, y: 1, z: 1}
+  StartAlpha: 1
+  AllowMultipleClicks: 1
+  ButtonCategory: WorldMap
+  ButtonName: SoundOnOff
+  ClickMode: 0
+  DeselectButtonAfterClick: 0
+  DisableButtonBetweenClicksInterval: 0.2
+  DoubleClickRegisterInterval: 0.2
+  InputData:
+    EnableAlternateInputs: 1
+    InputMode: 2
+    KeyCode: 13
+    KeyCodeAlt: 32
+    VirtualButtonName: Submit
+    VirtualButtonNameAlt: Jump
+  LongClickRegisterInterval: 0.5
+  OnPointerEnter:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0.4
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 3
+  OnPointerExit:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0.4
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 4
+  OnPointerDown:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 5
+  OnPointerUp:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 6
+  OnClick:
+    Animators: []
+    ButtonAnimationType: 1
+    DeselectButton: 0
+    DisableInterval: 0.4
+    Enabled: 1
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 661316485}
+            m_TargetAssemblyTypeName: WorldMap, Assembly-CSharp
+            m_MethodName: musicTrigger
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: Example Clicks
+        SoundName: Beeps Bonks Boinks
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 0
+  OnDoubleClick:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0.2
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 1
+  OnLongClick:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0.2
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 2
+  OnRightClick:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 9
+  OnSelected:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 7
+  OnDeselected:
+    Animators: []
+    ButtonAnimationType: 0
+    DeselectButton: 0
+    DisableInterval: 0
+    Enabled: 0
+    LoadSelectedPresetAtRuntime: 0
+    OnTrigger:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    PresetCategory: Uncategorized
+    PresetName: Default
+    PunchAnimation:
+      AnimationType: 4
+      Move:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 4
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 4
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Ready: 1
+    SelectButton: 0
+    StateAnimation:
+      AnimationType: 5
+      Move:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 5
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 5
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    TriggerEventsAfterAnimation: 0
+    m_behaviorType: 8
+  NormalLoopAnimation:
+    Animation:
+      AnimationType: 3
+      Move:
+        AnimationType: 3
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 3
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 3
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 3
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Enabled: 0
+    IsPlaying: 0
+    LoopAnimationType: 0
+    LoadSelectedPresetAtRuntime: 0
+    PresetCategory: 
+    PresetName: 
+  SelectedLoopAnimation:
+    Animation:
+      AnimationType: 3
+      Move:
+        AnimationType: 3
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 3
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Scale:
+        AnimationType: 3
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Fade:
+        AnimationType: 3
+        Enabled: 0
+        From: 0
+        To: 0
+        By: 0.5
+        UseCustomFromAndTo: 0
+        NumberOfLoops: -1
+        LoopType: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+    Enabled: 0
+    IsPlaying: 0
+    LoopAnimationType: 1
+    LoadSelectedPresetAtRuntime: 0
+    PresetCategory: 
+    PresetName: 
+  TargetLabel: 1
+  TextLabel: {fileID: 1920670596}
+--- !u!114 &119135844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119135841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 119135846}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!222 &119135845
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119135841}
+  m_CullTransparentMesh: 1
+--- !u!114 &119135846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119135841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4519f86e30133944e8be8eca3d413c54, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &121472516
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,7 +8379,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6480,7 +8910,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6840,7 +9271,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7177,7 +9609,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1530159401}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -7207,7 +9639,8 @@ MonoBehaviour:
   m_text: Drag the screen left or right to switch between level views
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ed4e938dff9443347b14cf8019c6ebb9, type: 2}
-  m_sharedMaterial: {fileID: 6242693110899106451, guid: ed4e938dff9443347b14cf8019c6ebb9, type: 2}
+  m_sharedMaterial: {fileID: 6242693110899106451, guid: ed4e938dff9443347b14cf8019c6ebb9,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10278,7 +12711,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 30
   m_Viewport: {fileID: 1404576939}
   m_HorizontalScrollbar: {fileID: 1652555726}
   m_VerticalScrollbar: {fileID: 1343981344}
@@ -10645,7 +13078,7 @@ RectTransform:
   - {fileID: 1663371351}
   - {fileID: 1842625714}
   m_Father: {fileID: 1530159401}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -10675,7 +13108,8 @@ MonoBehaviour:
   m_text: SCORE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
-  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
+  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11021,7 +13455,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14511,7 +16946,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14831,7 +17267,8 @@ MonoBehaviour:
   m_text: Space - The Future
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
-  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
+  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15123,7 +17560,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15370,7 +17808,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15579,7 +18018,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16395,7 +18835,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16807,6 +19248,10 @@ MonoBehaviour:
   lev3s1: {fileID: 1486114660}
   lev3s2: {fileID: 825421767}
   lev3s3: {fileID: 1997874083}
+  sound: {fileID: 119135846}
+  soundOn: {fileID: 21300000, guid: 4519f86e30133944e8be8eca3d413c54, type: 3}
+  soundOff: {fileID: 21300000, guid: d71b7765d8694a54d9d64acd85f3fa04, type: 3}
+  musicOn: 1
   fullstar: {fileID: 21300000, guid: ba8a1489bae25f64facc76b4fb591732, type: 3}
   leaders:
   - {fileID: 1423115698}
@@ -21293,11 +23738,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Shoot the dinosaurs and take back the crystals. \n\nYou will learn about
-    conditional statements."
+  m_text: "Travelling back in time to when dinosaurs roamed wild. Becareful not to
+    be caught and take back the final crystal. \n\nYou will learn about conditional
+    statements."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25a6fb10aeccebe4d8723011ae532728, type: 2}
-  m_sharedMaterial: {fileID: -3731469934711745088, guid: 25a6fb10aeccebe4d8723011ae532728, type: 2}
+  m_sharedMaterial: {fileID: -3731469934711745088, guid: 25a6fb10aeccebe4d8723011ae532728,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21431,7 +23878,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21640,7 +24088,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24637,7 +27086,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26010,7 +28460,8 @@ MonoBehaviour:
   m_text: Learning objectives
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c99aea0042295034ab50134975359cb8, type: 2}
-  m_sharedMaterial: {fileID: -7208113394771267125, guid: c99aea0042295034ab50134975359cb8, type: 2}
+  m_sharedMaterial: {fileID: -7208113394771267125, guid: c99aea0042295034ab50134975359cb8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29019,7 +31470,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29128,7 +31580,7 @@ RectTransform:
   m_Children:
   - {fileID: 989954458}
   m_Father: {fileID: 1530159401}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30123,7 +32575,8 @@ MonoBehaviour:
   m_text: Learning objectives
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c99aea0042295034ab50134975359cb8, type: 2}
-  m_sharedMaterial: {fileID: -7208113394771267125, guid: c99aea0042295034ab50134975359cb8, type: 2}
+  m_sharedMaterial: {fileID: -7208113394771267125, guid: c99aea0042295034ab50134975359cb8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -30889,7 +33342,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31403,7 +33857,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31476,81 +33931,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020453887}
-  m_CullTransparentMesh: 1
---- !u!1 &1030128543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1030128544}
-  - component: {fileID: 1030128546}
-  - component: {fileID: 1030128545}
-  m_Layer: 0
-  m_Name: WaterMark
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1030128544
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030128543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1530159401}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 158, y: 41.700012}
-  m_SizeDelta: {x: 247.29, y: 48.43}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1030128545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030128543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.34901962}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2f44406b447ad634fad2fd28129303a4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1030128546
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030128543}
   m_CullTransparentMesh: 1
 --- !u!1 &1031370241
 GameObject:
@@ -34188,7 +36568,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34606,7 +36987,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34740,7 +37122,8 @@ MonoBehaviour:
   m_text: Cretaceous Period
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
-  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
+  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35040,7 +37423,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35249,7 +37633,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35465,7 +37850,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -38025,7 +40411,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -39112,7 +41499,8 @@ MonoBehaviour:
     will learn about angles and how to move around.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25a6fb10aeccebe4d8723011ae532728, type: 2}
-  m_sharedMaterial: {fileID: -3731469934711745088, guid: 25a6fb10aeccebe4d8723011ae532728, type: 2}
+  m_sharedMaterial: {fileID: -3731469934711745088, guid: 25a6fb10aeccebe4d8723011ae532728,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -40599,7 +42987,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -40672,140 +43061,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262889645}
-  m_CullTransparentMesh: 1
---- !u!1 &1264399625
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1264399626}
-  - component: {fileID: 1264399628}
-  - component: {fileID: 1264399627}
-  m_Layer: 0
-  m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1264399626
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264399625}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2121377274}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1264399627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264399625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279175682
-  m_fontColor: {r: 0.007843138, g: 0.039215688, b: 0.05882353, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1264399628
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264399625}
   m_CullTransparentMesh: 1
 --- !u!1 &1268710599
 GameObject:
@@ -40942,7 +43197,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41076,7 +43332,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41652,7 +43909,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -42825,7 +45083,8 @@ MonoBehaviour:
   m_text: Modern Day
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
-  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
+  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -43672,7 +45931,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -44181,7 +46441,8 @@ MonoBehaviour:
   m_text: Please Wait...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4eccce80b6bcf794ab9d995cd2135171, type: 2}
-  m_sharedMaterial: {fileID: 4650111131546794695, guid: 4eccce80b6bcf794ab9d995cd2135171, type: 2}
+  m_sharedMaterial: {fileID: 4650111131546794695, guid: 4eccce80b6bcf794ab9d995cd2135171,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -44536,10 +46797,9 @@ RectTransform:
   - {fileID: 1953928307}
   - {fileID: 1656513962}
   - {fileID: 902114439}
-  - {fileID: 2121377274}
   - {fileID: 474255151}
   - {fileID: 77769380}
-  - {fileID: 1030128544}
+  - {fileID: 119135842}
   - {fileID: 374001105}
   - {fileID: 1974632545}
   - {fileID: 927511388}
@@ -47966,7 +50226,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -48386,7 +50647,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -48556,7 +50818,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -51898,7 +54161,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -52032,7 +54296,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -52616,7 +54881,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -52975,7 +55241,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
-  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8, type: 2}
+  m_sharedMaterial: {fileID: 3169712939374314394, guid: b4746992e1c4df1418a0ce8ef614eba8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -53266,7 +55533,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -54685,7 +56953,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -55133,6 +57402,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909175610}
   m_CullTransparentMesh: 1
+--- !u!1 &1920670594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920670595}
+  - component: {fileID: 1920670597}
+  - component: {fileID: 1920670596}
+  m_Layer: 0
+  m_Name: Label
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1920670595
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920670594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 119135842}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1920670596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920670594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.007843138, g: 0.039215688, b: 0.05882353, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 12
+    m_MaxSize: 20
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1920670597
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920670594}
+  m_CullTransparentMesh: 1
 --- !u!1 &1925322646
 GameObject:
   m_ObjectHideFlags: 0
@@ -55193,7 +57541,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -58589,7 +60938,7 @@ RectTransform:
   - {fileID: 186232334}
   - {fileID: 869265441}
   m_Father: {fileID: 1530159401}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -61721,7 +64070,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -61855,7 +64205,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -62064,7 +64415,8 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -64974,7 +67326,8 @@ MonoBehaviour:
   m_text: Learning objectives
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c99aea0042295034ab50134975359cb8, type: 2}
-  m_sharedMaterial: {fileID: -7208113394771267125, guid: c99aea0042295034ab50134975359cb8, type: 2}
+  m_sharedMaterial: {fileID: -7208113394771267125, guid: c99aea0042295034ab50134975359cb8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -65587,7 +67940,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
-  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593, type: 2}
+  m_sharedMaterial: {fileID: -8311162223675442548, guid: bc91a2debd01b1d40b14080c58016593,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -65660,2420 +68014,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110835869}
-  m_CullTransparentMesh: 1
---- !u!1 &2121377273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2121377274}
-  - component: {fileID: 2121377278}
-  - component: {fileID: 2121377277}
-  - component: {fileID: 2121377276}
-  - component: {fileID: 2121377275}
-  m_Layer: 0
-  m_Name: Button - SoundOnOff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2121377274
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121377273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1264399626}
-  m_Father: {fileID: 1530159401}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 60, y: 60}
-  m_SizeDelta: {x: 80, y: 80}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2121377275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121377273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d12bfc32d0d797428cf0191288caabd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DebugMode: 0
-  StartPosition: {x: 0, y: 0, z: 0}
-  StartRotation: {x: 0, y: 0, z: 0}
-  StartScale: {x: 1, y: 1, z: 1}
-  StartAlpha: 1
-  AllowMultipleClicks: 1
-  ButtonCategory: WorldMap
-  ButtonName: SoundOnOff
-  ClickMode: 0
-  DeselectButtonAfterClick: 0
-  DisableButtonBetweenClicksInterval: 0.2
-  DoubleClickRegisterInterval: 0.2
-  InputData:
-    EnableAlternateInputs: 1
-    InputMode: 2
-    KeyCode: 13
-    KeyCodeAlt: 32
-    VirtualButtonName: Submit
-    VirtualButtonNameAlt: Jump
-  LongClickRegisterInterval: 0.5
-  OnPointerEnter:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0.4
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 3
-  OnPointerExit:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0.4
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 4
-  OnPointerDown:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 5
-  OnPointerUp:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 6
-  OnClick:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0.4
-    Enabled: 1
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 0
-  OnDoubleClick:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0.2
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 1
-  OnLongClick:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0.2
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 2
-  OnRightClick:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 9
-  OnSelected:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 7
-  OnDeselected:
-    Animators: []
-    ButtonAnimationType: 0
-    DeselectButton: 0
-    DisableInterval: 0
-    Enabled: 0
-    LoadSelectedPresetAtRuntime: 0
-    OnTrigger:
-      AnimatorEvents: []
-      Effect:
-        AutoSort: 1
-        Behavior: 0
-        CustomSortingOrder: 0
-        SortingSteps: 1
-        ParticleSystem: {fileID: 0}
-        StopBehavior: 1
-        CustomSortingLayer: Default
-      Event:
-        m_PersistentCalls:
-          m_Calls: []
-      GameEvents: []
-      SoundData:
-        SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
-        AudioClip: {fileID: 0}
-        OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
-    PunchAnimation:
-      AnimationType: 4
-      Move:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 4
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 4
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Ready: 1
-    SelectButton: 0
-    StateAnimation:
-      AnimationType: 5
-      Move:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 5
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 5
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    TriggerEventsAfterAnimation: 0
-    m_behaviorType: 8
-  NormalLoopAnimation:
-    Animation:
-      AnimationType: 3
-      Move:
-        AnimationType: 3
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 3
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 3
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 3
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Enabled: 0
-    IsPlaying: 0
-    LoopAnimationType: 0
-    LoadSelectedPresetAtRuntime: 0
-    PresetCategory: 
-    PresetName: 
-  SelectedLoopAnimation:
-    Animation:
-      AnimationType: 3
-      Move:
-        AnimationType: 3
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        Direction: 0
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Rotate:
-        AnimationType: 3
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Scale:
-        AnimationType: 3
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-      Fade:
-        AnimationType: 3
-        Enabled: 0
-        From: 0
-        To: 0
-        By: 0.5
-        UseCustomFromAndTo: 0
-        NumberOfLoops: -1
-        LoopType: 1
-        EaseType: 0
-        Ease: 1
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 1
-    Enabled: 0
-    IsPlaying: 0
-    LoopAnimationType: 1
-    LoadSelectedPresetAtRuntime: 0
-    PresetCategory: 
-    PresetName: 
-  TargetLabel: 2
-  TextLabel: {fileID: 0}
---- !u!114 &2121377276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121377273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2121377277}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2121377277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121377273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4519f86e30133944e8be8eca3d413c54, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2121377278
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121377273}
   m_CullTransparentMesh: 1
 --- !u!1 &2123070223
 GameObject:

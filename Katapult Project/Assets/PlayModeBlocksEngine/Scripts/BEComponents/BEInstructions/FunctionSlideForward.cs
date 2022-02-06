@@ -32,7 +32,15 @@ public class FunctionSlideForward : BEInstruction
         {
             if (counterForMovement <= movementDuration)
             {
-                counterForMovement += Time.deltaTime * 3f;
+                if(SceneManager.GetActiveScene().name == "ModernCity")
+                {
+                    counterForMovement += Time.deltaTime * 9f;
+                }
+                else
+                {
+                    counterForMovement += Time.deltaTime * 3f;
+                }
+                
                 if (targetObject.GetComponent<Collider2D>())
                 {
                     direction = targetObject.transform.right;
@@ -66,7 +74,14 @@ public class FunctionSlideForward : BEInstruction
         {
             if (counterForMovement <= movementDuration)
             {
-                counterForMovement += Time.deltaTime * 3f;
+                if (SceneManager.GetActiveScene().name == "ModernCity")
+                {
+                    counterForMovement += Time.deltaTime * 9f;
+                }
+                else
+                {
+                    counterForMovement += Time.deltaTime * 3f;
+                }
                 if (targetObject.GetComponent<Collider2D>())
                 {
                     direction = targetObject.transform.right;

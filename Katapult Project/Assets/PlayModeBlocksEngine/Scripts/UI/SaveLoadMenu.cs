@@ -11,7 +11,7 @@ public class SaveLoadMenu : SaveLoadCode
     {
         get
         {
-            return transform.GetChild(2).GetComponent<InputField>().text;
+                return transform.GetChild(2).GetComponent<InputField>().text;
         }
         set
         {
@@ -147,6 +147,7 @@ public class SaveLoadMenu : SaveLoadCode
                 transform.GetChild(5).gameObject.SetActive(false);
                 transform.GetChild(6).gameObject.SetActive(false);
                 transform.GetChild(7).gameObject.SetActive(true);
+                confirmation = true;
             }
             else
             {
@@ -172,12 +173,13 @@ public class SaveLoadMenu : SaveLoadCode
     {
         ProgrammingEnv.GetComponent<SaveLoadCode>().BESaveCode(FullPath);
         gameObject.SetActive(false);
-
+        Debug.Log(FullPath);
         CloseConfirmSavePanel();
     }
 
     public void Load()
     {
+        Debug.Log(UserController.instance.isRestart);
         string fullPath;
         if (TextInput.Length > 0)
         {
