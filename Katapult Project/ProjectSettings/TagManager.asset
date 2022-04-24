@@ -11,6 +11,16 @@ TagManager:
   - saveLoadMenu
   - wall
   - obj
+  - crystal
+  - var
+  - turn
+  - Child
+  - Animal
+  - Claw
+  - Environment
+  - Barricade
+  - Panel
+  - blockade
   layers:
   - Default
   - TransparentFX

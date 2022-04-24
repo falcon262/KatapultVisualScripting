@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using Doozy.Engine.UI;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class WorldMap : MonoBehaviour
 {
@@ -140,6 +142,7 @@ public class WorldMap : MonoBehaviour
     private void Start()
     {
         StartCoroutine(WelcomeMessage());
+
     }
 
     public void PopulateLeaderBoard()

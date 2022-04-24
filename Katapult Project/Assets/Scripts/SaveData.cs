@@ -11,7 +11,7 @@ public class SaveData
     public static void SaveToJSON<T>(List<T> toSave, string filename)
     {
         Debug.Log(GetPath(filename));
-        string content = JsonHelper.ToJson<T>(toSave.ToArray());
+        string content = Helper.ToJson<T>(toSave.ToArray());
         WriteFile(GetPath(filename), content);
     }
 
@@ -30,7 +30,7 @@ public class SaveData
             return new List<T>();
         }
 
-        List<T> res = JsonHelper.FromJson<T>(content).ToList();
+        List<T> res = Helper.FromJson<T>(content).ToList();
 
         return res;
 
@@ -102,7 +102,7 @@ public class UserEntries
     }
 }
 
-public static class JsonHelper
+public static class Helper
 {
     public static T[] FromJson<T>(string json)
     {

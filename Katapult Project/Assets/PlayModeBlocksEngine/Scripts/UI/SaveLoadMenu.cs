@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
@@ -171,6 +172,10 @@ public class SaveLoadMenu : SaveLoadCode
 
     public void ConfirmSaveCode()
     {
+        if (!Directory.Exists(Path.GetDirectoryName(FullPath)))
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(FullPath));
+        }
         ProgrammingEnv.GetComponent<SaveLoadCode>().BESaveCode(FullPath);
         gameObject.SetActive(false);
         Debug.Log(FullPath);

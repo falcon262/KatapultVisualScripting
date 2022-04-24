@@ -346,10 +346,11 @@ public class BEController : MonoBehaviour
                                 {
                                     BELayoutRebuild.RebuildAll();
                                 }
-
-                                ghostBlock.transform.SetParent(newParent);
-                                ghostBlock.transform.SetSiblingIndex(toDropBlock.CalculateIndex());
-
+                                if (Input.mousePosition.x > 340)
+                                {
+                                    ghostBlock.transform.SetParent(newParent);
+                                    ghostBlock.transform.SetSiblingIndex(toDropBlock.CalculateIndex());
+                                }
                                 break;
                             }
                         }

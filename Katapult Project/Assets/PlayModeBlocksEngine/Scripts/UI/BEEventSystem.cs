@@ -31,7 +31,7 @@ public class BEEventSystem
         //Set up the new Pointer Event
         PointerEventData m_PointerEventData = new PointerEventData(EventSystem.current);
         //Set the Pointer Event Position to that of the mouse position
-        m_PointerEventData.position = Input.mousePosition;
+        m_PointerEventData.position = new Vector2(Input.mousePosition.x, (Input.mousePosition.y+20));
         //Create a list of Raycast Results
         List<RaycastResult> results = new List<RaycastResult>();
         //Raycast using the Graphics Raycaster and mouse click position

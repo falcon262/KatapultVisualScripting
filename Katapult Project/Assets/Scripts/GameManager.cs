@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     public Button createAccountButton;
     public Button OK;
     public UIToggle rememberMe;
+    public TMP_InputField code;
 
     string username;
     string password;
@@ -123,7 +124,7 @@ public class GameManager : MonoBehaviour
     public void EnterSignUsername() => inputSelected = 0;
     public void EnterSignPassword() => inputSelected = 1;
 
-    IEnumerator RegisterUser(string email, string password, string conPassword, string username, string name)
+    public IEnumerator RegisterUser(string email, string password, string conPassword, string username, string name)
     {
         WWWForm form = new WWWForm();
         form.AddField("email", email);
@@ -154,6 +155,7 @@ public class GameManager : MonoBehaviour
 
                 //Print Body
                 Debug.Log(www.downloadHandler.text);
+                UserController.instance.UserParse(www.downloadHandler.text);
 
                 StartCoroutine(UserController.instance.UpdateGender(JsonUtility.FromJson<UserController.userInfo>(www.downloadHandler.text).data.user.id, UserController.instance.sex + ":" + UserController.instance.s1 + ":" + UserController.instance.s2 + ":" + UserController.instance.s3));
 /*                if (www.downloadHandler.text.Contains("false"))
@@ -179,8 +181,32 @@ public class GameManager : MonoBehaviour
     {
         UserController.instance.sex = "Female";
     }
-    
-    IEnumerator UserLogin(string username, string password)
+
+    public void onClickGetGoogleCode()
+    {
+        GoogleAuthenticator.GetAuthCode();
+    }
+
+    public void OnClickGoogleSignIn()
+    {
+        GoogleAuthenticator.ExchangeAuthCodeWithIdToken(code.text, idToken =>
+        {
+            FirebaseAuthHandler.SingInWithToken(idToken, "google.com");
+        });
+    }
+
+    public void AuthSignIn()
+    {
+        StartCoroutine(UserLogin(UserController.instance.fullName, UserController.instance.localId));
+    }
+
+    public void AuthSignUp()
+    {
+        StartCoroutine(RegisterUser(UserController.instance.authEmail, UserController.instance.localId, UserController.instance.localId, UserController.instance.fullName, UserController.instance.fullName));
+    }
+
+
+    public IEnumerator UserLogin(string username, string password)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);

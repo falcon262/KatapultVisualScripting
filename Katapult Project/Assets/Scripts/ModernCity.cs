@@ -141,9 +141,9 @@ public class ModernCity : MonoBehaviour
                         starCenterE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("22", UserController.instance.info.data.user.id));
                     }
-                    else if ((int)timer < 50 && blockCount >= 8)
+                    else
                     {
-                        starLeftE.SetActive(true); ;
+                        starLeftE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("21", UserController.instance.info.data.user.id));
                     }
                 }
@@ -176,7 +176,7 @@ public class ModernCity : MonoBehaviour
                         starCenterE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("2232", UserController.instance.info.data.user.id));
                     }
-                    else if ((int)timer < 50 && blockCount >= 14)
+                    else
                     {
                         starLeftE.SetActive(true); ;
                         StartCoroutine(UserController.instance.UpdateSettings("2131", UserController.instance.info.data.user.id));
@@ -212,9 +212,9 @@ public class ModernCity : MonoBehaviour
                         starCenterE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("223242", UserController.instance.info.data.user.id));
                     }
-                    else if ((int)timer < 60 && blockCount >= 10)
+                    else
                     {
-                        starLeftE.SetActive(true); ;
+                        starLeftE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("213141", UserController.instance.info.data.user.id));
                     }
                 }
@@ -278,9 +278,9 @@ public class ModernCity : MonoBehaviour
                         starCenterE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("22", UserController.instance.info.data.user.id));
                     }
-                    else if ((int)timer < 50 && blockCount >= 8)
+                    else
                     {
-                        starLeftE.SetActive(true); ;
+                        starLeftE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("21", UserController.instance.info.data.user.id));
                     }
                 }
@@ -313,9 +313,9 @@ public class ModernCity : MonoBehaviour
                         starCenterE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("2232", UserController.instance.info.data.user.id));
                     }
-                    else if ((int)timer < 50 && blockCount >= 14)
+                    else
                     {
-                        starLeftE.SetActive(true); ;
+                        starLeftE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("2131", UserController.instance.info.data.user.id));
                     }
                 }
@@ -348,9 +348,9 @@ public class ModernCity : MonoBehaviour
                         starCenterE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("223242", UserController.instance.info.data.user.id));
                     }
-                    else if ((int)timer < 60 && blockCount >= 8)
+                    else
                     {
-                        starLeftE.SetActive(true); ;
+                        starLeftE.SetActive(true);
                         StartCoroutine(UserController.instance.UpdateSettings("213141", UserController.instance.info.data.user.id));
                     }
                 }
@@ -421,7 +421,7 @@ public class ModernCity : MonoBehaviour
 
     public void setDino()
     {
-        dino.moveSpeed = 4.5f;
+        dino.moveSpeed = 4f;
         dino.transform.gameObject.GetComponentInChildren<Animator>().SetBool("Follow", true);
     }
 

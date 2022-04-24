@@ -27,8 +27,9 @@ public class Dino : MonoBehaviour
 
     void Logic()
     {
+        float move = moveSpeed * Time.deltaTime;
         transform.LookAt(target);
-        transform.Translate(0,0,moveSpeed * Time.deltaTime);
+        transform.Translate(0,0,move);
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -57,158 +57,162 @@ public class UIDrop : MonoBehaviour, IDropHandler, IPointerClickHandler
 
     public void SetBlockAtIndex(BEBlock droppedBlock, int index)
     {
-        BETargetObject targetObject = TargetObject;// GetParentTargetObject(transform);
-
-        if (targetObject != null)
+        if (Input.mousePosition.x > 340)
         {
-            //set the block to fitter unconstrained to enable the possibility of expanding the block on drop of Operations as input
-            droppedBlock.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
 
-            if (droppedBlock.BeController.ghostBlock.transform.parent != null)
+            BETargetObject targetObject = TargetObject;// GetParentTargetObject(transform);
+
+            if (targetObject != null)
             {
-                SetBlockAtGhostPos(droppedBlock);
-                UserController.instance.tick.Play();
-            }
-            else if (transform.name == "ProgrammingEnv")
-            {
-                droppedBlock.transform.SetParent(transform);
-                droppedBlock.transform.SetSiblingIndex(index);
+                //set the block to fitter unconstrained to enable the possibility of expanding the block on drop of Operations as input
+                droppedBlock.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
 
-                droppedBlock.BeBlockGroup = null;
-
-                RectTransform droppedBlockRect = droppedBlock.GetComponent<RectTransform>();
-
-                if (GetComponent<ScrollRect>())
+                if (droppedBlock.BeController.ghostBlock.transform.parent != null)
                 {
-                    float borderLimit = 30;
-
-                    Transform content = transform.GetChild(0).GetChild(0);
-                    droppedBlock.transform.SetParent(content);
-                    RectTransform contentRectTransform = content.GetComponent<RectTransform>();
-                    bool resize = false;
-                    float sizeX = contentRectTransform.sizeDelta.x;
-                    float sizeY = contentRectTransform.sizeDelta.y;
-
-                    if (droppedBlock.transform.localPosition.x + droppedBlockRect.rect.width > contentRectTransform.sizeDelta.x)
-                    {
-                        sizeX = droppedBlock.transform.localPosition.x + (droppedBlockRect.rect.width / 2) + droppedBlockRect.rect.width;
-                        resize = true;
-                    }
-                    if (droppedBlock.transform.localPosition.x < borderLimit)
-                    {
-                        droppedBlock.transform.localPosition = new Vector3(borderLimit, droppedBlock.transform.localPosition.y, droppedBlock.transform.localPosition.z);
-                    }
-                    // v1.2 -scrollviewl now expands right and bottom if dropped block is beyond view limit
-                    if (-droppedBlock.transform.localPosition.y < borderLimit)
-                    {
-                        droppedBlock.transform.localPosition = new Vector3(droppedBlock.transform.localPosition.x, -borderLimit, droppedBlock.transform.localPosition.z);
-                    }
-                    if (-droppedBlock.transform.localPosition.y + droppedBlockRect.rect.height > contentRectTransform.sizeDelta.y)
-                    {
-                        sizeY = -droppedBlock.transform.localPosition.y + (droppedBlockRect.rect.height / 2) + droppedBlockRect.rect.height;
-                        resize = true;
-                    }
-
-                    if (resize)
-                    {
-                        contentRectTransform.sizeDelta = new Vector2(sizeX, sizeY);
-                    }
-
-
+                    SetBlockAtGhostPos(droppedBlock);
+                    UserController.instance.tick.Play();
                 }
-
-                // Block added to list
-                if (!targetObject.beBlockGroupsList.Contains(droppedBlock))
-                {
-                    targetObject.beBlockGroupsList.Add(droppedBlock);
-                }
-
-                if (droppedBlock.blockType == BEBlock.BlockTypeItems.trigger)
-                {
-                    BEBlock blockGroup = droppedBlock;
-
-                    blockGroup.beActiveBlock = droppedBlock;
-                    droppedBlock.BeBlockGroup = blockGroup;
-                    droppedBlock.beTargetObject = targetObject;
-
-                }
-            }
-            else if (GetComponent<BEBlock>())
-            {
-                if (droppedBlock.blockType != BEBlock.BlockTypeItems.trigger && droppedBlock.blockType != BEBlock.BlockTypeItems.operation)
+                else if (transform.name == "ProgrammingEnv")
                 {
                     droppedBlock.transform.SetParent(transform);
                     droppedBlock.transform.SetSiblingIndex(index);
 
-                    // child block added to this object
-                    try
+                    droppedBlock.BeBlockGroup = null;
+
+                    RectTransform droppedBlockRect = droppedBlock.GetComponent<RectTransform>();
+
+                    if (GetComponent<ScrollRect>())
                     {
-                        GetComponent<BEBlock>().beChildBlocksList.Insert(index - 1, droppedBlock);
-                    }
-                    catch
-                    {
-                        if (!GetComponent<BEBlock>().beChildBlocksList.Contains(droppedBlock))
+                        float borderLimit = 30;
+
+                        Transform content = transform.GetChild(0).GetChild(0);
+                        droppedBlock.transform.SetParent(content);
+                        RectTransform contentRectTransform = content.GetComponent<RectTransform>();
+                        bool resize = false;
+                        float sizeX = contentRectTransform.sizeDelta.x;
+                        float sizeY = contentRectTransform.sizeDelta.y;
+
+                        if (droppedBlock.transform.localPosition.x + droppedBlockRect.rect.width > contentRectTransform.sizeDelta.x)
                         {
-                            GetComponent<BEBlock>().beChildBlocksList.Add(droppedBlock);
+                            sizeX = droppedBlock.transform.localPosition.x + (droppedBlockRect.rect.width / 2) + droppedBlockRect.rect.width;
+                            resize = true;
+                        }
+                        if (droppedBlock.transform.localPosition.x < borderLimit)
+                        {
+                            droppedBlock.transform.localPosition = new Vector3(borderLimit, droppedBlock.transform.localPosition.y, droppedBlock.transform.localPosition.z);
+                        }
+                        // v1.2 -scrollviewl now expands right and bottom if dropped block is beyond view limit
+                        if (-droppedBlock.transform.localPosition.y < borderLimit)
+                        {
+                            droppedBlock.transform.localPosition = new Vector3(droppedBlock.transform.localPosition.x, -borderLimit, droppedBlock.transform.localPosition.z);
+                        }
+                        if (-droppedBlock.transform.localPosition.y + droppedBlockRect.rect.height > contentRectTransform.sizeDelta.y)
+                        {
+                            sizeY = -droppedBlock.transform.localPosition.y + (droppedBlockRect.rect.height / 2) + droppedBlockRect.rect.height;
+                            resize = true;
+                        }
+
+                        if (resize)
+                        {
+                            contentRectTransform.sizeDelta = new Vector2(sizeX, sizeY);
+                        }
+
+
+                    }
+
+                    // Block added to list
+                    if (!targetObject.beBlockGroupsList.Contains(droppedBlock))
+                    {
+                        targetObject.beBlockGroupsList.Add(droppedBlock);
+                    }
+
+                    if (droppedBlock.blockType == BEBlock.BlockTypeItems.trigger)
+                    {
+                        BEBlock blockGroup = droppedBlock;
+
+                        blockGroup.beActiveBlock = droppedBlock;
+                        droppedBlock.BeBlockGroup = blockGroup;
+                        droppedBlock.beTargetObject = targetObject;
+
+                    }
+                }
+                else if (GetComponent<BEBlock>())
+                {
+                    if (droppedBlock.blockType != BEBlock.BlockTypeItems.trigger && droppedBlock.blockType != BEBlock.BlockTypeItems.operation)
+                    {
+                        droppedBlock.transform.SetParent(transform);
+                        droppedBlock.transform.SetSiblingIndex(index);
+
+                        // child block added to this object
+                        try
+                        {
+                            GetComponent<BEBlock>().beChildBlocksList.Insert(index - 1, droppedBlock);
+                        }
+                        catch
+                        {
+                            if (!GetComponent<BEBlock>().beChildBlocksList.Contains(droppedBlock))
+                            {
+                                GetComponent<BEBlock>().beChildBlocksList.Add(droppedBlock);
+                            }
+                        }
+                        droppedBlock.BeBlockGroup = GetComponent<BEBlock>().BeBlockGroup;
+
+                        // v1.3 -Bug fix: [reported] beTargetObject not being set
+                        droppedBlock.beTargetObject = targetObject;//transform.root.GetComponent<BETargetObject>();
+                    }
+                    else
+                    {
+                        UIDrop progEnv = GetParentProgrammingEnv(transform);
+                        if (progEnv != null)
+                        {
+                            progEnv.SetBlockAtIndex(droppedBlock, 1000);
+                        }
+                        else
+                        {
+                            Destroy(droppedBlock.gameObject);
                         }
                     }
-                    droppedBlock.BeBlockGroup = GetComponent<BEBlock>().BeBlockGroup;
-
-                    // v1.3 -Bug fix: [reported] beTargetObject not being set
-                    droppedBlock.beTargetObject = targetObject;//transform.root.GetComponent<BETargetObject>();
                 }
-                else
+                else if (GetComponent<InputField>())
                 {
-                    UIDrop progEnv = GetParentProgrammingEnv(transform);
-                    if (progEnv != null)
+                    if (droppedBlock.blockType == BEBlock.BlockTypeItems.operation)
                     {
-                        progEnv.SetBlockAtIndex(droppedBlock, 1000);
+                        int siblingIndex = transform.GetSiblingIndex();
+
+                        gameObject.SetActive(false);
+
+                        //store the child input + siblingindex to be placed back if needed
+                        droppedBlock.GetComponent<UIDrag>().inactiveBlockInputs.Add(new InactiveBlockInput(siblingIndex, transform));
+
+                        droppedBlock.transform.SetParent(transform.parent);
+
+                        droppedBlock.transform.SetSiblingIndex(siblingIndex);
+
+                        transform.SetAsLastSibling();
+
+                        // v1.3 -Bug fix: [reported] beTargetObject not being set
+                        droppedBlock.beTargetObject = TargetObject;
+
+                        BELayoutRebuild.LayoutRebuildParents(transform);
                     }
                     else
                     {
-                        Destroy(droppedBlock.gameObject);
+                        UIDrop progEnv = GetParentProgrammingEnv(transform);
+                        if (progEnv != null)
+                        {
+                            progEnv.SetBlockAtIndex(droppedBlock, 1000);
+                        }
+                        else
+                        {
+                            Destroy(droppedBlock.gameObject);
+                        }
                     }
                 }
-            }
-            else if (GetComponent<InputField>())
-            {
-                if (droppedBlock.blockType == BEBlock.BlockTypeItems.operation)
-                {
-                    int siblingIndex = transform.GetSiblingIndex();
 
-                    gameObject.SetActive(false);
-
-                    //store the child input + siblingindex to be placed back if needed
-                    droppedBlock.GetComponent<UIDrag>().inactiveBlockInputs.Add(new InactiveBlockInput(siblingIndex, transform));
-
-                    droppedBlock.transform.SetParent(transform.parent);
-
-                    droppedBlock.transform.SetSiblingIndex(siblingIndex);
-
-                    transform.SetAsLastSibling();
-
-                    // v1.3 -Bug fix: [reported] beTargetObject not being set
-                    droppedBlock.beTargetObject = TargetObject;
-
-                    BELayoutRebuild.LayoutRebuildParents(transform);
-                }
-                else
-                {
-                    UIDrop progEnv = GetParentProgrammingEnv(transform);
-                    if (progEnv != null)
-                    {
-                        progEnv.SetBlockAtIndex(droppedBlock, 1000);
-                    }
-                    else
-                    {
-                        Destroy(droppedBlock.gameObject);
-                    }
-                }
             }
 
+            BELayoutRebuild.RebuildAll();
         }
-
-        BELayoutRebuild.RebuildAll();
 
     }
 
